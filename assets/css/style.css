@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+  background: url(../images/pod.comms.icon.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* banner */
+.section.banner {
+  background: #1150AB; 
+  color: #fff;
+  padding: -7px 0;
+  font-size: 7px;
+  font-weight: 100;
+  position: relative;
+}
+
+.h1 {
+  font-size: 24px;
+  background-color: #1150AB; 
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  animation: scrollLoop 20s linear infinite;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* subscribe button */
+.subscribe-form-container {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  height: 35px;
+  width: 400px;
+  text-align: center;
+}
+
+.subscribe-button:hover::before {
+  content: "Subscribe";
+  position: absolute;
+  background-color: #1150AB;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 1px;
+  font-size: 16px;
+  font-weight:700;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.subscribe-button:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subscribe-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #1150AB;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #cfcece;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px; 
+  height: 40px; 
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  .landing-page {
+    height: auto;
+  }
+
+  .subscribe-form-container {
+    position: static;
+    transform: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .landing-page {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .subscribe-button:hover::before {
+    padding: 3px; 
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .subscribe-button:hover::before {
+    padding: 5px; 
+    font-size: 14px; 
+  }
+}
