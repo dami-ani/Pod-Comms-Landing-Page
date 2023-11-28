@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.landing-page {
+  position: relative;
+  background: url(../images/pod.comms.icon.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #1150AB;
+  text-align: center;
+}
+
+.section.banner {
+  background: rgba(17, 80, 171, 0.7); 
+  color: #fff;
+  padding: -7px 0;
+  font-size: 7px;
+  font-weight: 100;
+}
+
+.h1 {
+  font-size: 24px;
+  background-color: rgba(17, 80, 171, 0.7); 
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  animation: scrollLoop 20s linear infinite;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.subscribe-form-container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  height: 35px;
+  width: 400px;
+  text-align: center;
+}
+
+.subscribe-button:hover::before {
+  content: "Subscribe";
+  position: absolute;
+  background-color: #1150AB;
+  color: #fff;
+  padding: 5px;
+  border-radius: 1px;
+  font-size: 16px;
+  font-weight:700;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.subscribe-button:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subscribe-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #1150AB;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #cfcece;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 40px; 
+  height: 40px; 
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .landing-page {
+    height: auto;
+  }
+
+  .subscribe-form-container {
+    position: static;
+    transform: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .landing-page {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .subscribe-button:hover::before {
+    padding: 3px; 
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .subscribe-button:hover::before {
+    padding: 5px; 
+    font-size: 14px; 
+  }
+}
