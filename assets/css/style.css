@@ -2,39 +2,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Hanken Grotesk', sans-serif;
-<<<<<<< HEAD
   background: url(../images/pod.comms.icon.png) no-repeat center center fixed;
   background-size: cover;
-=======
 }
 
-/* background */
-.landing-page {
-  position: relative;
-  background: url(../images/pod.comms.icon.png) no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  color: #1150AB;
-  text-align: center;
->>>>>>> da06c5c3fb06eba88def70267944755219bb5733
-}
 
 /* banner */
 .section.banner {
-  background: #1150AB; 
+  background: #1150AB;
   color: #fff;
   padding: -7px 0;
   font-size: 7px;
   font-weight: 100;
-<<<<<<< HEAD
   position: relative;
-=======
->>>>>>> da06c5c3fb06eba88def70267944755219bb5733
 }
+
 
 .h1 {
   font-size: 24px;
-  background-color: #1150AB; 
+  background-color: #1150AB;
   font-weight: bold;
   color: #ffffff;
   border-radius: 0.5rem;
@@ -45,34 +31,31 @@ body {
   animation: scrollLoop 20s linear infinite;
 }
 
+
 @keyframes scrollLoop {
   0% {
     transform: translateX(100%);
   }
+
 
   100% {
     transform: translateX(-100%);
   }
 }
 
+
 /* subscribe button */
 .subscribe-form-container {
-<<<<<<< HEAD
   position: fixed;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   width: 100%;
-  margin-bottom: 20px; /* Add margin for spacing */
-=======
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
->>>>>>> da06c5c3fb06eba88def70267944755219bb5733
+  margin-bottom: 20px;
+  /* Add margin for spacing */
 }
+
 
 .subscribe-form {
   display: flex;
@@ -80,11 +63,13 @@ body {
   align-items: center;
 }
 
+
 .form-input {
   height: 35px;
   width: 400px;
   text-align: center;
 }
+
 
 .subscribe-button:hover::before {
   content: "Subscribe";
@@ -94,16 +79,18 @@ body {
   padding: 5px;
   border-radius: 1px;
   font-size: 16px;
-  font-weight:700;
+  font-weight: 700;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
 }
 
+
 .subscribe-button:hover::before {
   visibility: visible;
   opacity: 1;
 }
+
 
 .subscribe-button {
   margin-top: 10px;
@@ -117,37 +104,36 @@ body {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-<<<<<<< HEAD
-  margin-bottom: 20px; /* Add margin for spacing */
-=======
->>>>>>> da06c5c3fb06eba88def70267944755219bb5733
+  margin-bottom: 20px;
+  /* Add margin for spacing */
 }
+
 
 /* footer */
 .footer {
-<<<<<<< HEAD
   position: fixed;
-=======
-  position: absolute;
->>>>>>> da06c5c3fb06eba88def70267944755219bb5733
   bottom: 0;
   width: 100%;
   background-color: #cfcece;
   text-align: center;
 }
 
+
 .social-icons {
   margin-top: 10px;
 }
+
 
 .social-icons a {
   margin: 0 10px;
 }
 
+
 .social-icons img {
-  width: 40px; 
-  height: 40px; 
+  width: 40px;
+  height: 40px;
 }
+
 
 /* media queries */
 @media only screen and (max-width: 600px) {
@@ -155,11 +141,13 @@ body {
     height: auto;
   }
 
+
   .subscribe-form-container {
     position: static;
     transform: none;
   }
 }
+
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .landing-page {
@@ -167,20 +155,18 @@ body {
   }
 }
 
+
 @media only screen and (max-width: 600px) {
   .subscribe-button:hover::before {
-    padding: 3px; 
+    padding: 3px;
     font-size: 12px;
   }
 }
 
+
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .subscribe-button:hover::before {
-    padding: 5px; 
-    font-size: 14px; 
+    padding: 5px;
+    font-size: 14px;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> da06c5c3fb06eba88def70267944755219bb5733
