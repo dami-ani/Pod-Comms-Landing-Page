@@ -2,16 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Hanken Grotesk', sans-serif;
-}
-
-/* background */
-.landing-page {
-  position: relative;
   background: url(../images/pod.comms.icon.png) no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  color: #1150AB;
-  text-align: center;
 }
 
 /* banner */
