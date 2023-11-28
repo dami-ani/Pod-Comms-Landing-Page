@@ -2,8 +2,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Hanken Grotesk', sans-serif;
+<<<<<<< HEAD
   background: url(../images/pod.comms.icon.png) no-repeat center center fixed;
   background-size: cover;
+=======
+}
+
+/* background */
+.landing-page {
+  position: relative;
+  background: url(../images/pod.comms.icon.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #1150AB;
+  text-align: center;
+>>>>>>> da06c5c3fb06eba88def70267944755219bb5733
 }
 
 /* banner */
@@ -13,7 +26,10 @@ body {
   padding: -7px 0;
   font-size: 7px;
   font-weight: 100;
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> da06c5c3fb06eba88def70267944755219bb5733
 }
 
 .h1 {
@@ -41,6 +57,7 @@ body {
 
 /* subscribe button */
 .subscribe-form-container {
+<<<<<<< HEAD
   position: fixed;
   bottom: 10%;
   left: 50%;
@@ -48,6 +65,13 @@ body {
   text-align: center;
   width: 100%;
   margin-bottom: 20px; /* Add margin for spacing */
+=======
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+>>>>>>> da06c5c3fb06eba88def70267944755219bb5733
 }
 
 .subscribe-form {
@@ -93,12 +117,19 @@ body {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
+<<<<<<< HEAD
   margin-bottom: 20px; /* Add margin for spacing */
+=======
+>>>>>>> da06c5c3fb06eba88def70267944755219bb5733
 }
 
 /* footer */
 .footer {
+<<<<<<< HEAD
   position: fixed;
+=======
+  position: absolute;
+>>>>>>> da06c5c3fb06eba88def70267944755219bb5733
   bottom: 0;
   width: 100%;
   background-color: #cfcece;
@@ -148,4 +179,8 @@ body {
     padding: 5px; 
     font-size: 14px; 
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> da06c5c3fb06eba88def70267944755219bb5733
